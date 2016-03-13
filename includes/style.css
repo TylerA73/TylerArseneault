@@ -8,7 +8,7 @@
 /******End Fonts******/
 
 .heading{
-    font-size: 4vw;
+    font-size: 4vh;
     color: #1f3c68;
     margin-top: -15px;
     
@@ -69,7 +69,7 @@
     font-family: brockscript;
     color: #1f3c68;
     margin-top: 150px;
-    font-size: 8vw;
+    font-size: 8vh;
 }
 .top-image-container{
     text-align: center;
@@ -120,7 +120,7 @@
 }
 #contact-title{
     color: #1f3c68;
-    font-size: 2vw;;
+    font-size: 2vh;
 }
 .contact-list{
     list-style: none;
