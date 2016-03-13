@@ -7,6 +7,13 @@
 
 /******End Fonts******/
 
+.heading{
+    font-size: 4vw;
+    color: #1f3c68;
+    margin-top: -15px;
+    
+}
+
 /******Navbar******/
 
 #navbar{
@@ -17,19 +24,19 @@
     margin-top: 20px;
     padding-right: 20px;
 }
-#navbar .navLink, #navbar .divider{
+#navbar .nav-link, #navbar .divider{
     color: #1f3c68;
     font-family: verdana;
     font-weight: bold;
     text-transform: capitalize;
     text-decoration: none;
 }
-#navbar .navLink:hover{
+#navbar .nav-link:hover{
     color: #2d5ba0;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-#navbar .navLink:before{
+#navbar .nav-link:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -43,7 +50,7 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-#navbar .navLink:hover:before{
+#navbar .nav-link:hover:before{
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -55,25 +62,49 @@
 #title{
     background-color: #eae5ff;
     text-align: center;
-    min-height: 100vh;
     margin: auto;
     position: relative;
 }
-#myName{
+#my-name{
     font-family: brockscript;
     color: #1f3c68;
     margin-top: 150px;
-    font-size: 3.5em;
+    font-size: 8vw;
+}
+.top-image-container{
+    text-align: center;
+}
+.top-image{
+    vertical-align: middle;
+    bottom: 0px;
+    margin: auto; 
+}
+.bottom-image-container{
+    text-align: center;
+}
+.bottom-image{
+    vertical-align: middle;
+    bottom: 0px;
+    margin: auto; 
 }
 
 /******End Title******/
+
+/******About******/
+
+#about{
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+/******End About******/
 
 /******Work******/
 
 #work{
     background-color: #fff;
     text-align: center;
-    min-height: 100vh;
     margin: auto;
 }
 
@@ -82,10 +113,17 @@
 /******Contact******/
 
 #contact{
-    background-color: #fff;
+    background-color: #eae5ff;
     text-align: center;
-    min-height: 100vh;
     margin: auto;
+    color: #1f3c68;
 }
-
+#contact-title{
+    color: #1f3c68;
+    font-size: 2vw;;
+}
+.contact-list{
+    list-style: none;
+    margin-top: 30px;
+}
 /******End Contact******/
