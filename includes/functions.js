@@ -15,8 +15,10 @@ $(document).ready(function(){
         
         if ($(window).scrollTop() > 55) {
             didScroll = true;
+            $('#top-button').removeClass('to-top-invisible').addClass('to-top-visible');
         } else {
             didScroll = false;
+            $('#top-button').removeClass('to-top-visible').addClass('to-top-invisible');
         }
         
     });
@@ -37,14 +39,10 @@ $(document).ready(function(){
         }
         
         if ((st > lastScrollTop) && (st > navbarHeight)) {
-            
             $('#navbar').removeClass('nav-show').addClass('nav-hide');
-            //console.log("hide");
-            
         } else {
             if ((st + $(window).height()) < ($(document).height())) {
                 $('#navbar').removeClass('nav-hide').addClass('nav-show');
-                //console.log("show");
             }
         }
         

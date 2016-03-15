@@ -41,7 +41,7 @@
     border-bottom: 1px solid rgba(224, 221, 255); /*for browsers that don't support CSS3*/
     border-bottom: 1px solid rgba(224, 221, 255, 0);
 }
-#navbar .nav-link, #navbar .divider{
+#navbar .nav-link{
     color: #1f3c68;
     font-family: verdana;
     font-weight: bold;
@@ -162,12 +162,55 @@
 #contact-title{
     color: #1f3c68;
     font-weight: bold;
+    font-size: 1.2em;
 }
 .contact-list{
     list-style: none;
-    font-size: 2.5vh;
+    font-size: 0.8em;
     margin-top: 30px;
     padding-left: 0px;
     text-align: center;
 }
 /******End Contact******/
+
+/******To Top******/
+.to-top{
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+    height: 40px;
+    width: 60px;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.to-top-visible{
+    background-color: rgb(234, 229, 255); /*for browsers that don't support CSS3*/
+    background-color: rgba(234, 229, 255, 0.9);
+    border: 1px solid rgba(224, 221, 255); /*for browsers that don't support CSS3*/
+    border: 1px solid rgba(224, 221, 255, 1);
+    right: -4px;
+}
+.to-top-invisible{
+    background-color: rgba(255, 255, 255);/*for browsers that don't support CSS3*/
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(224, 221, 255); /*for browsers that don't support CSS3*/
+    border: 1px solid rgba(224, 221, 255, 1);
+    right: -80px;
+}
+.to-top a{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+#top-button .nav-link{
+    color: #1f3c68;
+    text-decoration: none;
+}
+#top-button .nav-link:hover{
+    color: #2d5ba0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+/******End To Top******/
