@@ -4,6 +4,40 @@ var delta = 5;
 var navbarHeight = $('#navbar').outerHeight(); 
 
 $(document).ready(function(){
+   
+   hideWork();
+   
+   showWork();
+
+   $('.port-item').hover(function(){
+      
+      if (this.id == "port1") {
+        $('#port1hover').css({
+                              "background-color" : "rgba(45, 91, 160, 0.5)",
+                              "color" : "rgba(0, 0, 0, 1)"
+                             });
+      } else if (this.id == "port2") {
+        $('#port2hover').css({
+                              "background-color" : "rgba(45, 91, 160, 0.5)",
+                              "color" : "rgba(0, 0, 0, 1)"
+                             });
+      }
+      
+   }, function(){
+   
+      if (this.id == "port1") {
+        $('#port1hover').css({
+                              "background-color" : "rgba(45, 91, 160, 0)",
+                              "color" : "rgba(0, 0, 0, 0)"                   
+                             });
+      } if (this.id == "port2") {
+        $('#port2hover').css({
+                              "background-color" : "rgba(45, 91, 160, 0)",
+                              "color" : "rgba(0, 0, 0, 0)"
+                             });
+      }
+   
+   });
     
    $(window).scroll(function(event){
         
@@ -47,5 +81,15 @@ $(document).ready(function(){
         }
         
         lastScrollTop = st;
+   }
+   
+   function hideWork() {
+      $('#port1').hide();
+      $('#port2').hide();
+   }
+   
+   function showWork() {
+      $('#port1').fadeIn(1000);
+      $('#port2').fadeIn(1000);
    }
 });

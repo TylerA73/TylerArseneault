@@ -14,6 +14,7 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="includes/functions.js"></script>
+        <script src="includes/jquery.waypoint.min.js"></script>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -91,6 +92,20 @@
                     <h1 class="heading">My Work</h1>
                 </div>
             </div>
+            <div id="portfolio">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="port-item thumbnail" id="port1">
+                            <div id="port1hover">Test content</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="port-item thumbnail" id="port2">
+                            <div id="port2hover">Different test content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row bottom-image-container">
                 <div class="col-md-12">
                     <img class="img-responsive bottom-image" src="includes/images/image-bottom.jpg" alt="Bottom Background Image"/>
@@ -106,17 +121,27 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <ul class="contact-list">
-                        <li>Some content</li>
-                        <li>Some content</li>
+                        <li><a href="" target="_blank">Facebook</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <ul class="contact-list">
-                        <li>Some content</li>
-                        <li>Some content</li>
+                        <li><a href="" target="_blank">Twitter</a></li>
                     </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="contact-list">
+                        <li><a href="https://www.instagram.com/tyler.arseneault/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="mailto:tylera73@gmail.com">
+                        <button type="button" class="btn btn-success btn-mail"><span class="glyphicon glyphicon-envelope"></span> Mail Me</button>
+                    </a>
                 </div>
             </div>
         </div>
