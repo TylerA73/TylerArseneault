@@ -227,36 +227,36 @@
     bottom: 15px;
     text-align: center;
     font-size: 25px;
-    height: 40px;
-    width: 60px;
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out 0s;
+    height: 50px;
+    width: 50px;
+    
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .to-top-visible{
-    background-color: rgb(234, 229, 255); /*for browsers that don't support CSS3*/
-    background-color: rgba(234, 229, 255, 0.9);
-    border: 1px solid rgba(224, 221, 255); /*for browsers that don't support CSS3*/
-    border: 1px solid rgba(224, 221, 255, 1);
-    right: -4px;
+    background: none;
+    border: 3px solid #1f3c68;
+    right: 5px;
+}
+.to-top-visible:hover{
+    border-color: #2d5ba0;
 }
 .to-top-invisible{
-    background-color: rgba(255, 255, 255);/*for browsers that don't support CSS3*/
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(224, 221, 255); /*for browsers that don't support CSS3*/
-    border: 1px solid rgba(224, 221, 255, 1);
-    right: -80px;
+    background: none;
+    border: 3px solid #1f3c68;
+    right: -60px;
 }
 .to-top a{
-    margin-top: 5px;
-    margin-right: 10px;
+    margin-top: 7px;
 }
 #top-button .nav-link{
     color: #1f3c68;
     text-decoration: none;
+    
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 #top-button .nav-link:hover{
     color: #2d5ba0;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
 }
 /******End To Top******/
