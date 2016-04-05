@@ -10,8 +10,14 @@
 .heading{
     font-size: 4vh;
     color: #1f3c68;
-    margin-top: -15px;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 100px;
     
+}
+.col-lg-12{
+    margin: 0px;
+    padding: 0px;
 }
 /******Navbar******/
 #navbar{
@@ -149,32 +155,35 @@
     margin: auto;
 }
 #portfolio{
-    min-height: 500px;
-}
-#port1, #port2{
-    width: 300px;
-    height: 200px;
     margin: auto;
-    padding: 0px;
-    border-radius: 4px;
 }
-#port1{
-    background-image: url("http://placehold.it/300x200");
-}
-#port2{
-    background-image: url("http://placehold.it/300x200");
-}
-#port1hover, #port2hover{
-    min-height: 200px;
-    min-width: 300px;
+.port-item, #front{
     margin: auto;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+}
+.port-item{
+    background: url("http://placehold.it/1000x300");
+    background-size: 70vw 40vh;
     padding: 0px;
-    color: rgba(0, 0, 0, 0);
-    background-color: rgba(45, 91, 160, 0);
-    border: 1px solid #1f3c68;
-    border-radius: 4px;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    text-align: center;
+    width: 70vw;
+    height: 40vh;
+}
+#front{
+    overflow: hidden;
+    background: red;
+    
+    transition: width 0.3s ease-in-out 0.1s;
+}
+.content-shown{
+    width: 70vw;
+    height: 40vh;
+}
+.content-hidden{
+    width: 0vw;
+    height: 40vh;
 }
 /******End Work******/
 
@@ -236,7 +245,7 @@
 .to-top-visible{
     background: none;
     border: 3px solid #1f3c68;
-    right: 5px;
+    right: 10px;
 }
 .to-top-visible:hover{
     border-color: #2d5ba0;
@@ -249,14 +258,14 @@
 .to-top a{
     margin-top: 7px;
 }
-#top-button .nav-link{
+#top-button-box .nav-link{
     color: #1f3c68;
     text-decoration: none;
     
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
-#top-button .nav-link:hover{
+#top-button-box .nav-link:hover{
     color: #2d5ba0;
 }
 /******End To Top******/

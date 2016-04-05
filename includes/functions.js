@@ -9,6 +9,7 @@ $(document).ready(function(){
    
    showWork();
 
+   /*
    $('.port-item').hover(function(){
       
       if (this.id == "port1") {
@@ -38,24 +39,38 @@ $(document).ready(function(){
       }
    
    });
-    
+   */
+   
    $(window).scroll(function(event){
         
-        if ($(window).scrollTop() > 1) {
+         if ($(window).scrollTop() > 1) {
             $('#navbar').removeClass('nav-no-border').addClass('nav-border');
-        } else {
+         } else {
             $('#navbar').removeClass('nav-border').addClass('nav-no-border');
-        }
+         }
         
         if ($(window).scrollTop() > 55) {
             didScroll = true;
-            $('#top-button').removeClass('to-top-invisible').addClass('to-top-visible');
+            $('#top-button-box').removeClass('to-top-invisible').addClass('to-top-visible');
         } else {
             didScroll = false;
-            $('#top-button').removeClass('to-top-visible').addClass('to-top-invisible');
+            $('#top-button-box').removeClass('to-top-visible').addClass('to-top-invisible');
         }
         
     });
+   
+   $('#top-button').click(function(){
+   
+      $('#navbar').removeClass('nav-hide').addClass('nav-show');
+   
+   });
+   
+   $('#port-item').hover(function(){
+      $('#front').removeClass('content-hidden').addClass('content-shown');
+   },
+   function(){
+      $('#front').removeClass('content-shown').addClass('content-hidden');   
+   });
    
    setInterval(function(){
         if (didScroll) {
