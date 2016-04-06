@@ -65,11 +65,11 @@ $(document).ready(function(){
    
    });
    
-   $('#port-item').hover(function(){
-      $('#front').removeClass('content-hidden').addClass('content-shown');
+   $('.port-item').hover(function(){
+      $(this).children(".front").removeClass('content-hidden').addClass('content-shown');
    },
    function(){
-      $('#front').removeClass('content-shown').addClass('content-hidden');   
+      $(this).children(".front").removeClass('content-shown').addClass('content-hidden');   
    });
    
    setInterval(function(){
