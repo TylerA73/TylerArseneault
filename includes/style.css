@@ -144,6 +144,10 @@
     text-align: center;
     margin: auto;
 }
+.img-mug{
+    text-align: center;
+    margin: auto;
+}
 
 /******End About******/
 
@@ -171,7 +175,7 @@
 }
 .front{
     vertical-align: middle;
-    overflow: scroll;
+    overflow: auto;
     background: rgba(157, 182, 222, 0.8);
     
     transition: width 0.3s ease-in-out 0.1s;
@@ -206,6 +210,7 @@
     background-color: #eae5ff;
     text-align: center;
     margin: auto;
+    padding-bottom: 15px;
     color: #1f3c68;
 }
 #contact-title{
@@ -238,6 +243,10 @@
 }
 .btn-mail:hover{
     color: #234624;
+}
+.copyright{
+    font-family: verdana;
+    font-size: .7em;
 }
 /******End Contact******/
 
