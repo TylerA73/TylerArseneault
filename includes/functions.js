@@ -8,51 +8,20 @@ $(document).ready(function(){
    hideWork();
    
    showWork();
-
-   /*
-   $('.port-item').hover(function(){
-      
-      if (this.id == "port1") {
-        $('#port1hover').css({
-                              "background-color" : "rgba(45, 91, 160, 0.5)",
-                              "color" : "rgba(0, 0, 0, 1)"
-                             });
-      } else if (this.id == "port2") {
-        $('#port2hover').css({
-                              "background-color" : "rgba(45, 91, 160, 0.5)",
-                              "color" : "rgba(0, 0, 0, 1)"
-                             });
-      }
-      
-   }, function(){
    
-      if (this.id == "port1") {
-        $('#port1hover').css({
-                              "background-color" : "rgba(45, 91, 160, 0)",
-                              "color" : "rgba(0, 0, 0, 0)"                   
-                             });
-      } if (this.id == "port2") {
-        $('#port2hover').css({
-                              "background-color" : "rgba(45, 91, 160, 0)",
-                              "color" : "rgba(0, 0, 0, 0)"
-                             });
-      }
-   
-   });
-   */
    
    $(window).scroll(function(event){
         
-         if ($(window).scrollTop() > 1) {
+         if ($(window).scrollTop() > 1) {                                        //adds border to the navbar when user scrolls down one px
             $('#navbar').removeClass('nav-no-border').addClass('nav-border');
-         } else {
+         } else {                                                                //removes the border when the page is at the very top
             $('#navbar').removeClass('nav-border').addClass('nav-no-border');
          }
         
-        if ($(window).scrollTop() > 55) {
+        if ($(window).scrollTop() > 55) {                                        //if user scrolls down passed 55px, navbar slides up and hides
             didScroll = true;
             $('#top-button-box').removeClass('to-top-invisible').addClass('to-top-visible');
-        } else {
+        } else {                                                                 //if user scrolls up, navbar slides down and appears
             didScroll = false;
             $('#top-button-box').removeClass('to-top-visible').addClass('to-top-invisible');
         }
@@ -61,19 +30,19 @@ $(document).ready(function(){
    
    $('#top-button').click(function(){
    
-      $('#navbar').removeClass('nav-hide').addClass('nav-show');
+      $('#navbar').removeClass('nav-hide').addClass('nav-show');                 //when user clicks button, the navbar reappears *to fix glitch where it didn't appear*
    
    });
    
-   $('.port-item').hover(function(){
+   $('.port-item').hover(function(){                                             //hover over portfolio item results in the description content appearing
       $(this).children(".front").removeClass('content-hidden').addClass('content-shown');
    },
-   function(){
+   function(){                                                                   //when the curser leaves, the description content disappears again
       $(this).children(".front").removeClass('content-shown').addClass('content-hidden');   
    });
    
    setInterval(function(){
-        if (didScroll) {
+        if (didScroll) {                                                         //if there was a scroll, hide navbar, and then set didScroll to false so that the scroll event can occur again
             hasScrolled();
             didScroll = false;
         }
@@ -83,21 +52,22 @@ $(document).ready(function(){
    function hasScrolled() {
         var st = $(this).scrollTop();
         
-        if (Math.abs(lastScrollTop-st) <= delta) { 
+        if (Math.abs(lastScrollTop-st) <= delta) {                               //determines if a scroll down actually occured from the last position.
             return;
         }
         
-        if ((st > lastScrollTop) && (st > navbarHeight)) {
+        if ((st > lastScrollTop) && (st > navbarHeight)) {                       //if new scrollTop is greater than last scrollTop and the neight of the navbar, hide the navbar
             $('#navbar').removeClass('nav-show').addClass('nav-hide');
-        } else {
+        } else {                                                                 //if not, then show navbar
             if ((st + $(window).height()) < ($(document).height())) {
                 $('#navbar').removeClass('nav-hide').addClass('nav-show');
             }
         }
         
-        lastScrollTop = st;
+        lastScrollTop = st;                                                      //last scrollTop position is now the current scrollTop position
    }
    
+   /*Does nothing yet. To be worked on*/
    function hideWork() {
       $('#port1').hide();
       $('#port2').hide();

@@ -97,13 +97,12 @@
 }
 /******End Navbar******/
 
-/******Title******/
+/******Master Head******/
 
-#title{
+#masthead{
     background-color: #eae5ff;
     text-align: center;
     margin: auto;
-    position: relative;
 }
 #my-name{
     font-family: brockscript;
@@ -122,20 +121,18 @@
     text-align: center;
 }
 .top-image{
-    vertical-align: middle;
     bottom: 0px;
     margin: auto; 
 }
 .bottom-image-container{
     text-align: center;
-    position: relative;
 }
 .bottom-image{
-    bottom: 0px;
+    position: relative;
     margin: auto;
 }
 
-/******End Title******/
+/******End Master Head******/
 
 /******About******/
 
