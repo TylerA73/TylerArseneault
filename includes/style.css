@@ -95,6 +95,10 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out 0s;
 }
+.img-header{
+    height: 50px;
+    margin: auto;
+}
 /******End Navbar******/
 
 /******Master Head******/
@@ -141,9 +145,14 @@
     text-align: center;
     margin: auto;
 }
-.img-mug{
+.img-about{
     text-align: center;
     margin: auto;
+}
+.img-face{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #5374A1;
 }
 
 /******End About******/
