@@ -126,7 +126,7 @@
 }
 .top-image{
     bottom: 0px;
-    margin: auto; 
+    margin: auto;
 }
 .bottom-image-container{
     text-align: center;
@@ -144,6 +144,17 @@
     background-color: #fff;
     text-align: center;
     margin: auto;
+    padding-bottom: 70px;
+}
+.triangle-purple{
+    margin: auto;
+    margin-top: -1px;
+    margin-bottom: 15px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #eae5ff;
 }
 .img-about{
     text-align: center;
@@ -160,9 +171,19 @@
 /******Work******/
 
 #work{
-    background-color: #fff;
+    background-color: #9FB6DA;
     text-align: center;
     margin: auto;
+}
+.triangle-white{
+    margin: auto;
+    margin-top: -1px;
+    margin-bottom: 15px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
 }
 #portfolio{
     margin: auto;
@@ -172,12 +193,14 @@
     color: #fff;
 }
 .port-item{
-    background: url("http://placehold.it/1000x300");
     background-size: 70vw 40vh;
     padding: 0px;
-    margin-bottom: 30px;
-    width: 70vw;
+    margin-bottom: 100px;
+    width: 40vw;
     height: 40vh;
+}
+#port1{
+    background-image: url("images/port-dummy.png");
 }
 .front{
     vertical-align: middle;
@@ -218,6 +241,16 @@
     margin: auto;
     padding-bottom: 15px;
     color: #1f3c68;
+}
+.triangle-blue{
+    margin: auto;
+    margin-top: -1px;
+    margin-bottom: 30px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #9FB6DA;
 }
 #contact-title{
     color: #1f3c68;
