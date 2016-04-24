@@ -176,7 +176,7 @@
 /******Work******/
 
 #work{
-    background-color: #6E4CFF;
+    background-color: #5d68fe;
     text-align: center;
     margin: auto;
 }
@@ -198,7 +198,7 @@
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #FF1B32;
+    border-top: 20px solid #ff4c4c;
 }
 #portfolio{
     margin: auto;
@@ -214,7 +214,7 @@
     margin: auto;
 }
 #port1{
-    background-color: #6E4CFF;
+    background-color: #5d68fe;
     border-bottom: 1px solid #6448E2;
 }
 #port2{
@@ -222,7 +222,7 @@
     border: 1px solid #00E08E;
 }
 #port3{
-    background-color: #FF1B32;
+    background-color: #ff4c4c;
 }
 /******End Work******/
 
