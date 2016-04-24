@@ -34,13 +34,6 @@ $(document).ready(function(){
    
    });
    
-   $('.port-item').hover(function(){                                             //hover over portfolio item results in the description content appearing
-      $(this).children(".front").removeClass('content-hidden').addClass('content-shown');
-   },
-   function(){                                                                   //when the curser leaves, the description content disappears again
-      $(this).children(".front").removeClass('content-shown').addClass('content-hidden');   
-   });
-   
    setInterval(function(){
         if (didScroll) {                                                         //if there was a scroll, hide navbar, and then set didScroll to false so that the scroll event can occur again
             hasScrolled();
@@ -69,12 +62,10 @@ $(document).ready(function(){
    
    /*Does nothing yet. To be worked on*/
    function hideWork() {
-      $('#port1').hide();
-      $('#port2').hide();
+      $('.img-port').hide();
    }
    
    function showWork() {
-      $('#port1').fadeIn(1000);
-      $('#port2').fadeIn(1000);
+      $('.img-port').fadeIn(1000);
    }
 });
