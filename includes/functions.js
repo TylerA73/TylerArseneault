@@ -1,9 +1,13 @@
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('#navbar').outerHeight(); 
 
 $(document).ready(function(){
+   var didScroll;
+   var lastScrollTop = 0;
+   var delta = 5;
+   var mastheadHeight = $('#masthead').outerHeight();
+   var navbarHeight = $('#navbar').outerHeight();
+   
+   
+   $('#loader-wrapper').delay(3000).slideUp();
    
    hideWork();
    
@@ -12,16 +16,10 @@ $(document).ready(function(){
    
    $(window).scroll(function(event){
         
-         if ($(window).scrollTop() > 1) {                                        //adds border to the navbar when user scrolls down one px
-            $('#navbar').removeClass('nav-no-border').addClass('nav-border');
-         } else {                                                                //removes the border when the page is at the very top
-            $('#navbar').removeClass('nav-border').addClass('nav-no-border');
-         }
-        
-        if ($(window).scrollTop() > 55) {                                        //if user scrolls down passed 55px, navbar slides up and hides
+        if ($(window).scrollTop() > mastheadHeight) {                                        //if user scrolls down passed 55px, to top button hides
             didScroll = true;
             $('#top-button-box').removeClass('to-top-invisible').addClass('to-top-visible');
-        } else {                                                                 //if user scrolls up, navbar slides down and appears
+        } else {                                                                 //if user scrolls up, to top button appears
             didScroll = false;
             $('#top-button-box').removeClass('to-top-visible').addClass('to-top-invisible');
         }
@@ -49,7 +47,7 @@ $(document).ready(function(){
             return;
         }
         
-        if ((st > lastScrollTop) && (st > navbarHeight)) {                       //if new scrollTop is greater than last scrollTop and the neight of the navbar, hide the navbar
+        if ((st > lastScrollTop) && (st > (mastheadHeight-navbarHeight))) {                       //if new scrollTop is greater than last scrollTop and the neight of the navbar, hide the navbar
             $('#navbar').removeClass('nav-show').addClass('nav-hide');
         } else {                                                                 //if not, then show navbar
             if ((st + $(window).height()) < ($(document).height())) {
