@@ -724,10 +724,33 @@
 /******Work******/
 
 #work{
-    background-color: #6E4CFF;
+    background-color: #5d68fe;
     text-align: center;
     margin: auto;
 }
+<<<<<<< HEAD
+=======
+.triangle-white{
+    margin: auto;
+    margin-top: -1px;
+    margin-bottom: 15px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+}
+.triangle-red{
+    margin: auto;
+    margin-top: -1px;
+    margin-bottom: 15px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ff4c4c;
+}
+>>>>>>> origin/master
 #portfolio{
     margin: auto;
 }
@@ -742,7 +765,7 @@
     margin: auto;
 }
 #port1{
-    background-color: #6E4CFF;
+    background-color: #5d68fe;
     border-bottom: 1px solid #6448E2;
 }
 #port2{
@@ -750,7 +773,7 @@
     border: 1px solid #00E08E;
 }
 #port3{
-    background-color: #FF1B32;
+    background-color: #ff4c4c;
 }
 /******End Work******/
 
