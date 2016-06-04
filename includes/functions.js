@@ -7,7 +7,8 @@ $(document).ready(function(){
    var navbarHeight = $('#navbar').outerHeight();
    
    
-   $('#loader-wrapper').delay(3000).slideUp();
+   $('#loader-wrapper').delay(2000).slideUp();
+   $('.loading').delay(2000).slideUp();
    
    hideWork();
    
