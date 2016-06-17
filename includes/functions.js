@@ -1,3 +1,8 @@
+$(window).load(function(){
+   $('#loader-wrapper').delay(1000).fadeOut();
+   $('.loading').delay(1000).fadeOut();
+   $('#navbar').removeClass('nav-hide').addClass('nav-show');
+})
 
 $(document).ready(function(){
    var didScroll;
@@ -5,10 +10,7 @@ $(document).ready(function(){
    var delta = 5;
    var mastheadHeight = $('#masthead').outerHeight();
    var navbarHeight = $('#navbar').outerHeight();
-   
-   
-   $('#loader-wrapper').delay(2000).slideUp();
-   $('.loading').delay(2000).slideUp();
+
    
    hideWork();
    
