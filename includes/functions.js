@@ -1,8 +1,4 @@
-$(window).load(function(){
-   $('#loader-wrapper').delay(1000).fadeOut();
-   $('.loading').delay(1000).fadeOut();
-   $('#navbar').removeClass('nav-hide').addClass('nav-show');
-})
+
 
 $(document).ready(function(){
    var didScroll;
@@ -10,8 +6,19 @@ $(document).ready(function(){
    var delta = 5;
    var mastheadHeight = $('#masthead').outerHeight();
    var navbarHeight = $('#navbar').outerHeight();
-
    
+   var xmlhttp;
+   var url = "about.html";
+   var response;
+   var current = "about";
+   
+   getContent();
+
+   $(window).load(function(){
+      $('#loader-wrapper').delay(1000).fadeOut();
+      $('.loading').delay(1000).fadeOut();
+      $('#navbar').removeClass('nav-hide').addClass('nav-show');
+   })
    hideWork();
    
    showWork();
@@ -69,4 +76,52 @@ $(document).ready(function(){
    function showWork() {
       $('.img-port').fadeIn(1000);
    }
+   
+   $("#aboutLink").click(function(){
+        if (current!="about") {
+            current = "about";
+            url = "about.html";
+            $('#aboutLink').removeClass('inactive').addClass('active');
+            $('#workLink').removeClass('active').addClass('inactive');
+            getContent();   
+        }
+    });
+    $("#workLink").click(function(){
+    
+        if (current!="work") {
+            current = "work";
+            url = "work.html";
+            $('#workLink').removeClass('inactive').addClass('active');
+            $('#aboutLink').removeClass('active').addClass('inactive');
+            getContent();   
+        }
+    
+    });
+    
+    function getContent() {
+    
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = callback;
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+    
+}
+
+function callback() {
+    
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+        
+     response = xmlhttp.responseText;
+     console.log(response);
+     displayContent();
+        
+    }
+    
+}
+
+function displayContent() {
+    
+    document.getElementById("content").innerHTML = response;
+    
+}
 });

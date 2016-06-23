@@ -7,6 +7,7 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="includes/style.css"/>
+        <link rel="icon" type="image/jpg" href="includes/images/face2.jpg"/>
         
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -27,137 +28,73 @@
             </div>
         </div>
         
+        <!--Navbar-->
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top nav-hide" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <a class="glyphicon glyphicon-menu-hamburger"></a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a id="aboutLink" class="nav-link active">About Me</a></li>
+                            <li><a id="workLink" class="nav-link inactive">My Work</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            
+        
         <div id="content">
-            <!--Navbar-->
-            <header>
-                <nav class="navbar navbar-default navbar-fixed-top nav-hide" id="navbar">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <div class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                                <span class="sr-only">Toggle Navigation</span>
-                                <a class="glyphicon glyphicon-menu-hamburger"></a>
-                            </div>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a class="nav-link">About Me</a></li>
-                                <li><a class="nav-link" href="work.html">My Work</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+        
             
-            <!--Master Head-->
-            <div class="container-fluid" id="masthead">
-                <div class="title">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 id="my-name">Tyler.</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <span id="description">developer.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--About Me-->
-            <div class="container-fluid" id="about">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="heading">About Me</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="face-container">
-                            <img class="img-resonsive img-face" src="includes/images/face2.jpg" alt="Face"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <img class="img-responsive img-about" src="includes/images/light.jpg" alt="Mug"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            Fresh Ideas
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <img class="img-responsive img-about" src="includes/images/pencil.jpg" alt="Pencil"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            Simple and elegant design
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <img class="img-responsive img-about" src="includes/images/laptop.jpg" alt="Laptop"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            Experienced coding
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Contact Me-->
-            <div class="container-fluid" id="contact">
-                <div class="row">
-                    <div class="col-md-12">
-                        <span id="contact-title">Contact Me</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <ul class="contact-list">
-                            <li><a href="https://github.com/TylerA73" target="_blank"></span>GitHub</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <ul class="contact-list">
-                            <li><a href="https://www.linkedin.com/in/tyler-arseneault-9b2a3873" target="_blank">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4">
-                        <ul class="contact-list">
-                            <li><a href="https://www.instagram.com/tyler.arseneault/" target="_blank">Instagram</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="mailto:tylera73@gmail.com">
-                            <button type="button" class="btn btn-success btn-mail"><span class="glyphicon glyphicon-envelope"></span> Mail Me</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div classs="col-md-12">
-                        <span class="copyright">&copy; 2016 <strong>Tyler Arseneault.</strong> All rights reserved.</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Back to Top-->
-            <footer class="to-top to-top-invisible" id="top-button-box">
-                <a class="glyphicon glyphicon-chevron-up nav-link" id="top-button" href="#masthead"></a>
-            </footer>
         </div>
+        
+        <!--Contact Me-->
+        <div class="container-fluid" id="contact">
+            <div class="row">
+                <div class="col-md-12">
+                    <span id="contact-title">Contact Me</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="contact-list">
+                        <li><a href="https://github.com/TylerA73" target="_blank"></span>GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="contact-list">
+                        <li><a href="https://www.linkedin.com/in/tyler-arseneault-9b2a3873" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="contact-list">
+                        <li><a href="https://www.instagram.com/tyler.arseneault/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="mailto:tylera73@gmail.com">
+                        <button type="button" class="btn btn-success btn-mail"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div classs="col-md-12">
+                    <span class="copyright">&copy; 2016 <strong>Tyler Arseneault.</strong> All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+        
+        <!--Back to Top-->
+        <footer class="to-top to-top-invisible" id="top-button-box">
+            <a class="glyphicon glyphicon-chevron-up nav-link" id="top-button" href="#masthead"></a>
+        </footer>
     </body>
 </html>
