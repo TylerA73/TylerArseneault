@@ -250,16 +250,16 @@
 /******End Work******/
 /******Contact******/
 #contact {
-  background-color: #4079ff;
-  border-top: 1px solid #2b69fb;
+  background-color: #bc76ff;
+  border-top: 1px solid #8152b1;
   text-align: center;
   margin: auto;
   padding-bottom: 15px;
   padding-top: 15px;
-  color: #1f3c68; }
+  color: #352868; }
 
 #contact-title {
-  color: #1f3c68;
+  color: #352868;
   font-size: 1.2em;
   font-family: lineal; }
 
@@ -271,7 +271,7 @@
   text-align: center; }
 
 .contact-list li a {
-  color: #1f3c68;
+  color: #352868;
   font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s; }
@@ -313,28 +313,28 @@
 
 .to-top-visible {
   background: none;
-  border: 3px solid #1f3c68;
+  border: 3px solid #352868;
   right: 10px; }
 
 .to-top-visible:hover {
-  border-color: #2d5ba0; }
+  border-color: #503ba5; }
 
 .to-top-invisible {
   background: none;
-  border: 3px solid #1f3c68;
+  border: 3px solid #352868;
   right: -60px; }
 
 .to-top a {
   margin-top: 7px; }
 
 #top-button-box .nav-link {
-  color: #1f3c68;
+  color: #352868;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out; }
 
 #top-button-box .nav-link:hover {
-  color: #2d5ba0; }
+  color: #503ba5; }
 
 /******End To Top******/
 
