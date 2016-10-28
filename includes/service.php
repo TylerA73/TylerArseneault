@@ -6,10 +6,10 @@
     $conn = mysqli_connect("localhost", "tylerars_tyler", "wh1M5ic4l", "tylerars_business");
     
     //check connection
-    /*
+    
     if(mysqli_connect_errorno()){
         echo "Failed to connect to MySQL Database: " . mysqli_connect_errorno();
-    }*/
+    }
     
     $sql = "SELECT * FROM `Employees`";
     

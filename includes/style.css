@@ -5,6 +5,9 @@
 @font-face {
   font-family: lineal;
   src: url("Lineal Simples St.ttf") format("truetype"); }
+@font-face {
+  font-family: myriad pro bold;
+  src: url("myriad-pro-bold.ttf") format("truetype"); }
 /******End Fonts******/
 .heading {
   font-size: 4vh;
@@ -80,9 +83,9 @@
   padding-left: 20px;
   top: 0px;
   border: none;
-  background-color: black;
+  background-color: #5374a1;
   /*for browsers that don't support CSS3*/
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(83, 116, 161, 0.3); }
 
 .nav-no-border {
   border-bottom: 1px solid #e0ddff;
@@ -213,8 +216,9 @@
   border: 5px solid #5374A1; }
 
 .info {
-  max-width: 50%;
-  margin: auto; }
+  max-width: 33vw;
+  margin: auto;
+  margin-bottom: 15px; }
 
 /******End About******/
 /******Work******/
@@ -250,37 +254,19 @@
 /******End Work******/
 /******Contact******/
 #contact {
-  background-color: #bc76ff;
-  border-top: 1px solid #8152b1;
+  background-color: #5374A1;
+  border-top: 1px solid #3b5276;
   text-align: center;
   margin: auto;
   padding-bottom: 15px;
   padding-top: 15px;
-  color: #352868; }
+  color: #fff; }
 
 #contact-title {
-  color: #352868;
-  font-size: 1.2em;
-  font-family: lineal; }
-
-.contact-list {
-  list-style: none;
-  font-size: 0.9em;
-  margin-top: 30px;
-  padding-left: 0px;
-  text-align: center; }
-
-.contact-list li a {
-  color: #352868;
-  font-weight: bold;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s; }
-
-.contact-list li a:hover {
   color: #fff;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s; }
+  font-size: 1.2em;
+  font-family: lineal;
+  margin-bottom: 25px; }
 
 .btn-mail {
   color: #316132;
@@ -313,28 +299,28 @@
 
 .to-top-visible {
   background: none;
-  border: 3px solid #352868;
+  border: 3px solid #3b5276;
   right: 10px; }
 
 .to-top-visible:hover {
-  border-color: #503ba5; }
+  border-color: #3b5276; }
 
 .to-top-invisible {
   background: none;
-  border: 3px solid #352868;
+  border: 3px solid #3b5276;
   right: -60px; }
 
 .to-top a {
   margin-top: 7px; }
 
 #top-button-box .nav-link {
-  color: #352868;
+  color: #3b5276;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out; }
 
 #top-button-box .nav-link:hover {
-  color: #503ba5; }
+  color: #658ed6; }
 
 /******End To Top******/
 
